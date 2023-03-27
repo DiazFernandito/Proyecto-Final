@@ -1,7 +1,7 @@
 # Proyecto-Final
 Argentina Programa - Introducción al Diseño Web - Comisión 184
 
-GRUPO 7, Desarroladores:
+GRUPO 7, Desarrolladores:
 
   * TORO, Federico Benjamín
   * HOLLMAN, Mercedes Elizabeth
