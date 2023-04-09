@@ -107,22 +107,22 @@ main .contenedor{
 }
 
 #exterior{
-	background-image: url(imagenes/exteriores.png);
+	background-image: url(pictures/exteriores.png);
 	background-repeat: no-repeat;
 	
 }
 #interior{
-	background-image: url(imagenes/interiores.png);
+	background-image: url(pictures/interiores.png);
 	background-repeat: no-repeat;
 	
 }
 #madera{
-	background-image: url(imagenes/maderas.png);
+	background-image: url(pictures/maderas.png);
 	background-repeat: no-repeat;
 	
 }
 #insumo{
-	background-image: url(imagenes/insumos.png);
+	background-image: url(pictures/insumos.png);
 	background-repeat: no-repeat;
 	
 }
