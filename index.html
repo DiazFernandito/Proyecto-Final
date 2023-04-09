@@ -1,259 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Pinturería, Pintura, Hogar, Color, Latex, Colibri">
-    <meta name="description" content="Colibri Pinturerias - Pinturerías">
-    <meta name="author" content="Grupo 7 - Comisión 184">
-    <title>Colibri Pinturerias</title>
-    <link rel="icon" type="image/x-icon" href="pictures/colibri-icono-24.ico">
-
-    <!-- Referencia a Estilos CSS (w3Schools) -->
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/w3-theme-purple.css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Pintureria Colibri</title>
 </head>
-
 <body>
+	<header>
+		<div class="contenedor-menu">
+			<div class="logo">
+				<img src="imagenes/ColibriLogo.png">
+			</div>
+			<div class="menu">
+				<nav>
+					<a href="#">INICIO</a>
+					<a href="#nuestros-productos">PRODUCTOS</a>
+					<a href="#contactos">CONTACTOS</a>
+					<a href="#quienes-somos">QUIENES SOMOS</a>
+				</nav>
+			</div>
+			
+		</div>		
+	</header>
 
-    <!-- Cabecera del documento -->
-    <header>
-        <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar w3-theme-d2 w3-left-align">
-                <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white">
-                    <img src="pictures/house-16.ico" alt="Home">
-                </a>
-                <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Contacto</a>
-                <a href="#ofertas"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Ofertas</a>
-                <a href="#locales"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Locales</a>
-                <a href="#marcas"   class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Marcas</a>
-            </div>
-        </div>
-    </header>    
+	<main>
+		<section id="nuestros-productos">
+			<div class="contenedor">
+				<div class="tarjeta">
+					<div class="img-tarjeta" id="exterior"> </div>	
+					<div class="titulo"> 
+						<h3> PRODUCTOS ESPECIALES <br> PARA EL EXTERIOR </h3>
+						<a href="#productos-exteriores">+INFO</a>
+					</div>
+				</div>
+				<div class="tarjeta">
+					<div class="img-tarjeta" id="interior"> </div>
+					<div class="titulo"> 
+						<h3>DECORACION DE <br>INTERIORES</h3>
+						<button>+INFO</button>
+					</div>
+				</div>
+				<div class="tarjeta">
+					<div class="img-tarjeta" id="madera"> </div>
+					<div class="titulo"> 
+						<h3>LINEA EXCLUSIVA <br>PARA MADERAS</h3>
+						<button>+INFO</button>
+					</div>
+				</div>
+				<div class="tarjeta">
+					<div class="img-tarjeta" id="insumo"> </div>
+					<div class="titulo"> 
+						<h3>INSUMOS PARA <br>EL PINTOR</h3>
+						<button>+INFO</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="productos-exteriores">
+			<div class="contenedor-exteriores">
+				<div class="tarjeta">
+					<div class="img-tarjeta" id="exterior"> </div>	
+					<div class="titulo"> 
+						<h3> PRODUCTOS ESPECIALES <br> PARA EL EXTERIOR </h3>
+					</div>
+				</div>
+				<div class="articulos-exteriores">
+					
+				</div>
+			</div>
+		</section>
 
-    <!-- Cuerpo Principal del documento -->
-    <main>
-        <!-- Imágen de presentación -->
-        <div class="w3-display-container w3-animate-opacity">
-            <img src="pictures/colibri-wall2.jpg" alt="Logo de El Colibrí" style="width:100%;height:100%;opacity: 100%;">
-        </div>
-        <!-- Marcas -->
-        <div class="w3-container w3-padding-64 w3-center" id="marcas">
-            <h2>MARCAS</h2>
-            <p>Trabajamos con las marcas más prestigiosas</p>
-            <div class="w3-row"><br>
-                <div class="w3-quarter">
-                    <img src="pictures/Alba.jpg" alt="Alba" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Alba</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/colorin.jpg" alt="Colorin" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Colorín</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/Sherwin.jpg" alt="Sherwin" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Sherwin Williams</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/tersuave.jpg" alt="Tersuave" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Tersuave</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/plavicon1.jpg" alt="Plavicon" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Plavicon</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/sinteplast1.jpg" alt="Sinteplast" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Sinteplast</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/rust1.jpg" alt="Rust" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Rust-Oleum</h3>
-                </div>
-                <div class="w3-quarter">
-                    <img src="pictures/petrilac1.jpg" alt="Petrilac" style="width:45%" class="w3-circle w3-hover-opacity">
-                    <h3>Petrilac</h3>
-                </div>
-            </div>
-        </div>
+	</main>
 
-        <!-- Locales -->
-        <div class="w3-row-padding w3-padding-64 w3-theme-l2" id="locales">
-            <div class="w3-quarter">
-                <h2>Nuestros Locales</h2>
-                <p>
-                    Contamos con tres sucursales en puntos estratégicos de la ciudad
-                    con la variedad más amplia de productos del mercado y con los profesionales
-                    que le brindarán una atención de primera.
-                </p>
-            </div>
-            <!-- Local Centro -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white">
-                    <img src="pictures/centro.jpg" alt="Centro" style="width: 100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Centro</h3>
-                        <h4 style="color:blueviolet;">San Martin 150</h4>
-                        <p>Teléfonos</p>
-                        <p>381 5888 999</p>
-                        <p>381 3589 235</p>
-                        <p style="font-size: 8px; font-weight: bold;">centro@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Local Norte -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white">
-                    <img src="pictures/norte.jpg" alt="Norte" style="width:100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Norte</h3>
-                        <h4 style="color:blueviolet;">Av. Norte 2650</h4>
-                        <p>Teléfonos</p>
-                        <p>381 6123 456</p>
-                        <p>381 5123 456</p>
-                        <p style="font-size: 8px; font-weight: bold;">norte@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Local Sur -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white">
-                    <img src="pictures/sur.jpg" alt="Sur" style="width:100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Sur</h3>
-                        <h4 style="color:blueviolet;">Gral. Gutierrez 35</h4>
-                        <p>Teléfonos</p>
-                        <p>381 7 9874 123</p>
-                        <p>381 6 8899 357</p>
-                        <p style="font-size: 8px; font-weight: bold;">sur@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Ofertas -->
-        <div class="w3-row-padding w3-center w3-padding-64" id="ofertas">
-            <h2>NUESTRAS OFERTAS</h2>
-            <p>Le ofrecemos estos increíbles precios !</p><br>
-            <!-- Oferta Alba -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme">
-                        <p class="w3-xlarge">Alba</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Albacryl</b></li>
-                    <li class="w3-padding-16">Rinde más</li>
-                    <li class="w3-padding-16">Interiores</li>
-                    <li class="w3-padding-16"><b>1 LT</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 8.500.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/alba1.png" alt="Alba1" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-            <!-- Oferta Sherwin Williams -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme-l2">
-                        <p class="w3-xlarge">Sherwin Williams</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Loxon</b></li>
-                    <li class="w3-padding-16">Larga Duración</li>
-                    <li class="w3-padding-16">Exteriores</li>
-                    <li class="w3-padding-16"><b>1.5 LT</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 12.499.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/Loxon1.jpg" alt="Sherwin" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-            <!-- Oferta Tersuave -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme">
-                        <p class="w3-xlarge">Tersuave</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Terplast</b></li>
-                    <li class="w3-padding-16">Revoque Plástico</li>
-                    <li class="w3-padding-16">Interior/Exterior</li>
-                    <li class="w3-padding-16"><b>5 KG</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 22.000.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/Tersuave1.jpg" alt="Tersuave" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Contacto -->
-        <div class="w3-container w3-padding-64 w3-theme-l5" id="contacto">
-            <div class="w3-row">
-                <!-- Datos de contacto -->
-                <div class="w3-col m5">
-                    <div class="w3-padding-16">
-                        <span class="w3-xlarge w3-border-deep-purple w3-bottombar">Contáctenos</span>
-                    </div>
-                    <p>Su consulta no nos molesta !</p>
-                    <p><img src="pictures/map-marker-2-24.ico">&nbsp;&nbsp;San Martin 150, Narnia</p>
-                    <p><img src="pictures/phone-24.ico">&nbsp;&nbsp;381 5888 999</p>
-                    <p><img src="pictures/whatsapp-24.ico">&nbsp;&nbsp;381 5888 999</p>
-                    <p><img src="pictures/email-12-24.ico">&nbsp;&nbsp;atclientes@colibri.com.ar</p>
-                </div>
-                <!-- Formulario de contacto -->
-                <div class="w3-col m7">
-                    <form class="w3-container w3-card-4 w3-padding-16 w3-white" target="_blank">
-                        <div class="w3-section">      
-                            <label>Nombre</label>
-                            <input class="w3-input" type="text" name="Nombre" required>
-                        </div>
-                        <div class="w3-section">      
-                            <label>Correo electrónico</label>
-                            <input class="w3-input" type="text" name="Email" required>
-                        </div>
-                        <div class="w3-section">      
-                            <label>Mensaje</label>
-                            <input class="w3-input" type="text" name="Mensaje" required>
-                        </div>  
-                        <button type="button" class="w3-button w3-right w3-theme">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Botón de Inicio al Pie -->
-        <div class="w3-bottombar w3-white">
-            <div class="w3-bar w3-white w3-left-align">
-                <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white w3-right">
-                    <img src="pictures/house-16.ico" alt="Home">
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <!-- Pie del documento - Redes Sociales - Powered/Quiénes somos -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-        <h4>Síganos</h4>
-        <a class="w3-button w3-large w3-white" href="https://es-la.facebook.com/login.php" title="Facebook" target="_blank"><img src="pictures/facebook-3-24.ico"></a>
-        <a class="w3-button w3-large w3-white" href="https://twitter.com/login/" title="Twitter" target="_blank"><img src="pictures/twitter-3-24.ico"></a>
-        <a class="w3-button w3-large w3-white" href="https://www.instagram.com/accounts/login/" title="Instragram" target="_blank"><img src="pictures/instagram-24.ico"></a>
-        <a class="w3-button w3-large w3-white" href="https://www.linkedin.com/login?fromSignIn=true" title="Linkedin" target="_blank"><img src="pictures/linkedin-6-24.ico"></a>
-        <p>Powered by 
-            <a href="#">Grupo 7 - Comisión 184</a>
-        </p>
-    </footer>
-    
 </body>
 </html>
