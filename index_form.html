@@ -1,0 +1,118 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Pinturería, Pintura, Hogar, Color, Latex, Colibri">
+    <meta name="description" content="Colibri Pinturerias - Pinturerías">
+    <meta name="author" content="Grupo 7 - Comisión 184">
+    <title>Colibri Pinturerias - Reclamos</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/Colibri_sin fondo.png">
+
+    <!-- Referencia a hoja de Estilos CSS (w3Schools) -->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3-theme-purple.css">
+    
+    <!-- Referencia a hoja de Estilos CSS Personalizadas -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+</head>
+<body background="blue">
+
+    <header>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align" style="height: 56px;">
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-white w3-white">
+            <img src="pictures/house-32-violeta.ico" alt="Home" style="padding: 8px;"></a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Reclamos</a>
+        </div>
+    </div>
+    </header>  
+    <main>    
+        <div class="w3-quarter">
+            <h2>Su opinión nos interesa:</h2>
+            <p><br>
+                Para lograr una mejor atención a nuestros estimados clientes, disponemos de esta 
+                sección donde escucharemos las opiniones de quienes compartimos esta actividad.
+            </p>
+            <p>
+                En cualquiera de nuestras sucursales podrá solicitar el "Libro de Quejas" o completar 
+                el presente formulario. Nos comunicaremos con Usted a la brevedad para salvar cualquier 
+                situación.
+            </p>
+            <p>El Equipo de Pinturerías Colibrí.</p>
+        </div>
+        <!-- ver como hacer para notificaciones, puede mandar un mail -->
+
+        <form action="show-data.html">
+            <fieldset><br><br>
+                <legend>Cual es su Reclamo?:</legend>
+                <br>
+               
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha"><br>
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" size="65"><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" size="65"><br>
+                <label for="num_contacto">Número de Contacto</label>
+                <input type="number" name="num_contacto" id="num_contacto"><br>
+                <label for="mail">Mail</label>
+                <input type="text" name="mail" id="mail" size="65" placeholder=".....@.com.ar"><br>
+
+
+                <p><strong>Asunto:</strong>
+                   <input type="checkbox" name="asunto" value="pinturas"> Prod. Exterior
+                   <input type="checkbox" name="asunto" value="deco">Decoración Interiores
+                   <input type="checkbox" name="asunto" value="maderas">Linea para Maderas
+                   <input type="checkbox" name="asunto" value="insumos">Insumos para el Pintor
+                </p>
+
+                <p><strong> Su pago se realizó:</strong>
+                    <input type="radio" name="pago" value="cash" checked>Efectivo
+                    <input type="radio" name="pago" value="trasnf">Transferencia
+                    <input type="radio" name="pago" value="debito">Débito
+                    <input type="radio" name="pago" value="credito">Crédito
+                </p>
+                <strong>Domicilio</strong><br>
+                <label for="calle">Calle</label>
+                <input type="text" name="calle" id="calle" size="50" required>
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="numero" required><br>
+                <label for="localidad">Localidad</label>
+                <input type="text" name="localidad" id="localidad" placeholder="Florencio Varela">
+                <label for="cod_postal">Código Postal</label>
+                <input type="number" name="cod_postal" id="cod_postal" placeholder="1888" size="4"><br>
+                <label for="mail">Mail</label>
+                <input type="email" name="mail" id="mail" placeholder="....@..com.ar" required>
+                <label for="num_contacto">Número de Contacto</label>
+                <input type="tel" name="num_contacto" id="num_contacto" required><br>
+
+                <p><strong> Reclamo:</strong></p>
+                <label for="comentarios"></label>
+                <textarea name="comentarios" rows="5" cols="50" placeholder="Hola, me refiero a..."></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar"> <!-- envia al action -->
+                <button type="reset">Reset</button>
+                <a href="index.html" ></a>
+            </fieldset>
+        </form>    
+
+     
+    </main>
+
+    <footer>
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+                <p>Powered by 
+                <a href="index.html">Grupo 7 - Comisión 184</a>
+                </p>
+    </footer>
+    
+</body>
+</html>
