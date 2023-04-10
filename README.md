@@ -8,3 +8,5 @@ GRUPO 7, Desarrolladores:
   * RODRIGUEZ, Roberto
   * MOLINA, Leonardo Mario
   * DIAZ, Fernando Alfredo
+  * CASTRO CORONEL, Miguel
+  
