@@ -33,9 +33,9 @@
     </div>
     </header>  
     <main>    
-        <div class="w3-quarter">
+        <div class="w3-quarter"><br><br>
             <h2>Su opinión nos interesa:</h2>
-            <p><br>
+            <p>
                 Para lograr una mejor atención a nuestros estimados clientes, disponemos de esta 
                 sección donde escucharemos las opiniones de quienes compartimos esta actividad.
             </p>
@@ -50,7 +50,7 @@
 
         <form action="show-data.html">
             <fieldset><br><br>
-                <legend>Cual es su Reclamo?:</legend>
+                <h2>¿Cuál es su Reclamo?</h2>
                 <br>
                
                 <label for="fecha">Fecha</label>
@@ -58,38 +58,44 @@
                 <br>
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" size="65"><br>
+                <br>
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido" size="65"><br>
+                <br>
                 <label for="num_contacto">Número de Contacto</label>
                 <input type="number" name="num_contacto" id="num_contacto"><br>
-                <label for="mail">Mail</label>
-                <input type="text" name="mail" id="mail" size="65" placeholder=".....@.com.ar"><br>
+                <br>
+                <label for="mail">Correo Electrónico</label>
+                <input type="text" name="mail" id="mail" size="65" placeholder=".....@.com.ar"><br><br>
 
 
                 <p><strong>Asunto:</strong>
                    <input type="checkbox" name="asunto" value="pinturas"> Prod. Exterior
-                   <input type="checkbox" name="asunto" value="deco">Decoración Interiores
-                   <input type="checkbox" name="asunto" value="maderas">Linea para Maderas
-                   <input type="checkbox" name="asunto" value="insumos">Insumos para el Pintor
+                   <input type="checkbox" name="asunto" value="deco"> Decoración Interiores
+                   <input type="checkbox" name="asunto" value="maderas"> Linea para Maderas
+                   <input type="checkbox" name="asunto" value="insumos"> Insumos para el Pintor
                 </p>
 
                 <p><strong> Su pago se realizó:</strong>
-                    <input type="radio" name="pago" value="cash" checked>Efectivo
-                    <input type="radio" name="pago" value="trasnf">Transferencia
-                    <input type="radio" name="pago" value="debito">Débito
-                    <input type="radio" name="pago" value="credito">Crédito
+                    <input type="radio" name="pago" value="cash" checked> Efectivo
+                    <input type="radio" name="pago" value="trasnf"> Transferencia
+                    <input type="radio" name="pago" value="debito"> Débito
+                    <input type="radio" name="pago" value="credito"> Crédito
+                    <br><br>
                 </p>
-                <strong>Domicilio</strong><br>
+                <strong>Domicilio:</strong><br><br>
                 <label for="calle">Calle</label>
                 <input type="text" name="calle" id="calle" size="50" required>
                 <label for="numero">Número</label>
                 <input type="number" name="numero" id="numero" required><br>
+                <br>
                 <label for="localidad">Localidad</label>
                 <input type="text" name="localidad" id="localidad" placeholder="Florencio Varela">
                 <label for="cod_postal">Código Postal</label>
                 <input type="number" name="cod_postal" id="cod_postal" placeholder="1888" size="4"><br>
-                <label for="mail">Mail</label>
-                <input type="email" name="mail" id="mail" placeholder="....@..com.ar" required>
+                <br>
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" name="mail" id="mail" placeholder=".....@.com.ar" required>
                 <label for="num_contacto">Número de Contacto</label>
                 <input type="tel" name="num_contacto" id="num_contacto" required><br>
 
@@ -99,7 +105,7 @@
                 <br>
                 <br>
                 <input type="submit" value="Enviar"> <!-- envia al action -->
-                <button type="reset">Reset</button>
+                <button type="reset">Cancelar</button>
                 <a href="index.html" ></a>
             </fieldset>
         </form>    
