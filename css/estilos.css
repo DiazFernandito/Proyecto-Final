@@ -1,0 +1,100 @@
+/* Botón '+info' */
+.miBoton{
+	margin: 30px; 
+	font-size: 1,5em;
+	font-weight: bold;
+	padding: 1px 70px ;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: blueviolet;
+}
+
+/* Hover del Botón '+info' */
+.miBoton:hover{
+	background-color: blue;
+}
+
+/* Contenedor 'productos' - Márgen superior */
+#productos {
+	margin-top: 60px;
+}
+
+/* Contenedor 'locales' - Márgen superior */
+#locales {
+	margin-top: 60px;
+}
+
+/* Clase 'claseProducto' - Alineación de títuls h3 por defecto */
+.claseProducto h3 {
+	text-align: center;
+}
+
+/* Imagen de Presentación */
+#presentacion {
+	margin-top: 40px;
+}
+
+/* Media query para los títulos h3 de la clase 'claseProducto' */
+@media screen and (min-width: 1289px) {
+	.claseProducto h3 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 1289px) {
+	.claseProducto h3 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1108px) {
+	.claseProducto h3 {
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 884px) {
+	.claseProducto h3 {
+		font-size: 12px;
+	}
+  }
+@media screen and (max-width: 749px) {
+	.claseProducto h3 {
+		font-size: 11px;
+	}
+}
+@media screen and (max-width: 704px) {
+	.claseProducto h3 {
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 658px) {
+	.claseProducto h3 {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 601px) {
+	.claseProducto h3 {
+		font-size: 20px;
+	}
+}
+
+/* Media query del botón perteneciente a la clase 'miBoton' */
+@media screen and (max-width: 1101px) {
+	.miBoton {
+		margin: 1px;
+		padding: 1px 30px;
+	}
+}
+
+/* Media Query de la imágen de presentación */
+@media screen and (min-width: 1000px) {
+	#presentacion {
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	#presentacion {
+		margin-top: 60px;
+	}
+}
+
