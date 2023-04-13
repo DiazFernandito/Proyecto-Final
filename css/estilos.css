@@ -28,7 +28,7 @@
 
 /* Clase 'claseProducto' - Alineación de títuls h3 por defecto */
 .claseProducto h3 {
-	text-align: left;
+	text-align: center;
 }
 
 /* Imagen de Presentación */
