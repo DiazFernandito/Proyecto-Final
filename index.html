@@ -25,17 +25,17 @@
     <!-- Cabecera del documento -->
     <header>
         <!-- Navbar -->
-        <div class="w3-top">
+        <div id="navbarContainer" class="w3-top">
             <div class="w3-bar w3-theme-d2 w3-left-align" style="height: 56px;">
                 <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white">
                     <img src="pictures/house-32-violeta.ico" alt="Home" style="padding: 8px;">
                 </a>
-                <a href="/index_form.html"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Reclamos</a>
-                <a href="#contacto"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Contacto</a>
-                <a href="#ofertas"   class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Ofertas</a>
-                <a href="#productos" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Productos</a>
-                <a href="#locales"   class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Locales</a>
-                <a href="#marcas"    class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Marcas</a>
+                <a href="index_form.html"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Reclamos</a>
+                <a href="#contacto"        class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Contacto</a>
+                <a href="#ofertas"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Ofertas</a>
+                <a href="#productos"       class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Productos</a>
+                <a href="#locales"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Locales</a>
+                <a href="#marcas"          class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Marcas</a>
             </div>
         </div>
     </header>    
@@ -43,11 +43,11 @@
     <!-- Cuerpo Principal del documento -->
     <main>
         <!-- Imágen de presentación -->
-        <div class="w3-display-container w3-animate-opacity">
+        <div id="presentacion" class="w3-display-container w3-animate-opacity">
             <img src="pictures/colibri-wall2.jpg" alt="Logo de El Colibrí" style="width:100%;height:100%;opacity: 100%;">
         </div>
         <!-- Marcas -->
-        <div class="w3-container w3-padding-64 w3-center" id="marcas">
+        <div id="marcas" class="w3-container w3-padding-64 w3-center">
             <h2>MARCAS</h2>
             <p>Trabajamos con las marcas más prestigiosas</p>
             <div class="w3-row"><br>
@@ -87,7 +87,7 @@
         </div>
 
         <!-- Locales -->
-        <div class="w3-row-padding w3-padding-64 w3-theme-l2" id="locales">
+        <div id="locales" class="w3-row-padding w3-padding-64 w3-theme-l2">
             <div class="w3-quarter">
                 <h2>NUESTROS LOCALES</h2>
                 <p>
@@ -98,7 +98,7 @@
             </div>
             <!-- Local Centro -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/centro.jpg" alt="Centro" style="width: 100%; height: 229px;">
                     <div class="w3-container">
                         <h3>Sucursal Centro</h3>
@@ -112,7 +112,7 @@
             </div>
             <!-- Local Norte -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/norte.jpg" alt="Norte" style="width:100%; height: 229px;">
                     <div class="w3-container">
                         <h3>Sucursal Norte</h3>
@@ -126,7 +126,7 @@
             </div>
             <!-- Local Sur -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/sur.jpg" alt="Sur" style="width:100%; height: 229px;">
                     <div class="w3-container">
                         <h3>Sucursal Sur</h3>
@@ -141,18 +141,14 @@
         </div>
 
         <!-- Productos -->
-        <br>
-        <br>
-        <br>
-        <br>        
-        <div class="w3-row-padding w3-padding-64 w3-theme-l2" id="productos">
+        <div id="productos" class="w3-row-padding w3-padding-64 w3-theme-l2">
             <h2>NUESTROS PRODUCTOS</h2>
             <p>En nuestro Showroom encontrará todo lo que necesite</p><br>
             <!-- Exteriores -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/exteriores.png" alt="Exteriores" style="width: 100%; height: 229px;">
-                    <div class="w3-container">
+                    <div class="w3-container claseProducto">
                         <h3>Productos para Exteriores</h3>
                         <button class="miBoton">+Info</button>
                     </div>
@@ -160,9 +156,9 @@
             </div>
             <!-- Interiores -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/interiores.png" alt="Interiores" style="width:100%; height: 229px;">
-                    <div class="w3-container">
+                    <div class="w3-container claseProducto">
                         <h3>Decoración de Interiores</h3>
                         <button class="miBoton">+Info</button>
                     </div>
@@ -170,9 +166,9 @@
             </div>
             <!-- Maderas -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/maderas.png" alt="Maderas" style="width:100%; height: 229px;">
-                    <div class="w3-container">
+                    <div class="w3-container claseProducto">
                         <h3>Linea para maderas</h3>
                         <button class="miBoton">+Info</button>
                     </div>
@@ -180,9 +176,9 @@
             </div>
             <!-- Insumos -->
             <div class="w3-quarter">
-                <div class="w3-card w3-white">
+                <div class="w3-card w3-white w3-border w3-hover-shadow">
                     <img src="pictures/insumos.png" alt="Insumos" style="width:100%; height: 229px;">
-                    <div class="w3-container">
+                    <div class="w3-container claseProducto">
                         <h3>Insumos para el pintor</h3>
                         <button class="miBoton">+Info</button>
                     </div>
@@ -191,7 +187,7 @@
         </div>
         
         <!-- Ofertas -->
-        <div class="w3-row-padding w3-center w3-padding-64" id="ofertas">
+        <div id="ofertas" class="w3-row-padding w3-center w3-padding-64">
             <h2>NUESTRAS OFERTAS</h2>
             <p>Le ofrecemos estos increíbles precios !</p><br>
             <!-- Oferta Alba -->
@@ -254,7 +250,7 @@
         </div>
 
         <!-- Contacto -->
-        <div class="w3-container w3-padding-64 w3-theme-l5" id="contacto">
+        <div id="contacto" class="w3-container w3-padding-64 w3-theme-l5">
             <div class="w3-row">
                 <!-- Datos de contacto -->
                 <div class="w3-col m5">
@@ -311,5 +307,35 @@
         </p>
     </footer>
     
+
+    <!-- Efecto scroll suave -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
 </body>
 </html>
