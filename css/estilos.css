@@ -7,7 +7,10 @@ body {
     font-size: 15px;
 }
 
-/* Estilos personalizados para los Item de la Navbar*/
+/* Estilos personalizados para la Navbar*/
+.navbar {
+    --bs-navbar-hover-color:rgb(255, 166, 0) ;
+}
 .miItem {
     font-size: 15px;
     color: white;
@@ -122,10 +125,6 @@ body {
 .contSusc h2 {
     color: blueviolet;
     text-align: center;
-}
-.suscBoton {
-    margin: 0px;
-    padding: 0px;
 }
 input[type=submit] {
     background-color: rgb(11, 94, 215);

@@ -28,7 +28,7 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: blueviolet; opacity: 85%;">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(82, 24, 136); opacity: 80%;">
             <div class="container-fluid">        
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="pictures/list-view-24-blanco.ico" alt="List">
@@ -349,13 +349,15 @@
                     <input type="text" placeholder="Su nombre" name="name" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
                     <input type="text" placeholder="Su correo electrónico" name="mail" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
                 </div>
-                <div class="contSusc" style="border-radius: 0px 0px 10px 10px;">
-                    <div class="suscBoton">
-                        <input type="submit" value="Suscríbase" style="width: 100%;padding:5px;margin:5px 0;display: inline-block;border: 1px solid grey;box-sizing:border-box;">
+                <div class="contSusc" style="border-radius: 0px 0px 10px 10px; padding-left:0px;">
+                    <!-- Botón de suscripción (Bootstrap) -->
+                    <div class="d-grid gap-2 col-1 mx-auto">
+                        <a href="mailto:suscripcion@colibri.com.ar" class="btn btn-primary">Suscríbase</a>
                     </div>
                 </div>
             </form>
         </div>
+
 
         <!-- Marcas (w3Schools) -->
         <div id="marcas" class="w3-container w3-center claseMarc">
