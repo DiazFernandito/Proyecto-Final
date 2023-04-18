@@ -90,7 +90,7 @@ body {
     font-weight: bold;
 }
 .w3-border {
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 /* Personalización del form de Suscripción */
@@ -110,26 +110,18 @@ body {
     color: yellow;
     text-align: center;
 }
-.formSusc {
-    border: 1px solid grey;
-    border-radius: 2%;
+.claseSusc p {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 0px;
 }
 .contSusc {
     padding: 10px;
     background-color: rgb(252, 252, 176) ;
 }
-.claseSusc h2 {
-    color: yellow;
-    text-align: center;
-}
 .contSusc h2 {
     color: blueviolet;
     text-align: center;
-}
-.claseSusc p {
-    color: blueviolet;
-    text-align: center;
-    margin-bottom: 0px;
 }
 .suscBoton {
     margin: 0px;
