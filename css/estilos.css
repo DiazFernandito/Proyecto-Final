@@ -75,26 +75,6 @@
     margin-bottom: 60px;
 }
 
-/* Clase contenedora de tarjetas de Marcas */
-.clasePie {
-    margin-top: 0px;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: blueviolet;
-    color: white;
-}
-.clasePie a {
-    color: yellow;
-}
-.clasePie p {
-    color: yellow;
-}
-.clasePie h4 {
-    color: yellow;
-}
-
 /* Clase contenedora de formulario de contacto */
 .claseConta {
     background-color: rgb(249, 249, 147);
@@ -130,28 +110,85 @@
     }
 }
 
-/* Personalización del Pie de Página */
+
+/* Clase contenedora del footer */
 .clasePie {
+    margin-top: 0px;
     padding-left: 200px;
+    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
     background-color: blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:yellow;
-}
-.clasePie h4 {
-    padding-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+}
+.clasePie a {
+    color: white;
+    text-decoration: none;
 }
 .clasePie p {
     margin-bottom: 5px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: yellow;
 }
-.clasePie a {
-    color:white;
-    text-decoration: none;
+.clasePie h4 {
+    color: yellow;
 }
 .clasePie li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+}
+
+/* Media query para el comportamiento del footer */
+@media screen and (min-width: 1340px){
+    .clasePie {
+		padding-left: 200px;
+		padding-right: 40px;
+	}
+}
+@media screen and (max-width: 1340px){
+    .clasePie {
+		padding-left: 150px;
+		padding-right: 10px;
+	}
+}
+@media screen and (max-width: 1260px){
+    .clasePie {
+		padding-left: 120px;
+		padding-right: 10px;
+	}
+}
+@media screen and (max-width: 1230px){
+    .clasePie {
+		padding-left: 100px;
+		padding-right: 10px;
+	}
+}
+@media screen and (max-width: 1210px){
+    .clasePie {
+		padding-left: 50px;
+		padding-right: 5px;
+	}
+}
+@media screen and (max-width: 900px){
+    .clasePie {
+		padding-left: 20px;
+		padding-right: 5px;
+	}
+}
+@media screen and (max-width: 745px){
+    .clasePie {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+@media screen and (max-width: 745px){
+    .clasePie {
+		padding-left: 100px;
+		padding-right: 2px;
+	}
 }
 
 /* Personalización del Botón Acordeón de Quiénes somos */
