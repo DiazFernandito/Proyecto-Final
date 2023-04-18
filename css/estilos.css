@@ -9,12 +9,12 @@ body {
 
 /* Estilos personalizados para la Navbar*/
 .navbar {
-    --bs-navbar-hover-color:rgb(255, 166, 0) ;
+    --bs-navbar-hover-color:rgb(238, 255, 0) ;
 }
 .miItem {
     font-size: 15px;
     color: white;
-    font-weight: bold;
+    font-weight:bold;
     text-align: center;
 }
 
