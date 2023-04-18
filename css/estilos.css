@@ -1,100 +1,258 @@
-/* Botón '+info' */
-.miBoton{
-	margin: 30px; 
-	font-size: 1,5em;
-	font-weight: bold;
-	padding: 1px 70px ;
-	border-radius: 15px;
-	border: 1px solid rgba(0, 0, 0, 0.5);
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-	color: white;
-	background-color: blueviolet;
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu:wght@500&family=Urbanist:wght@500&display=swap');
+
+/* Clase contenedora de tarjetas de locales */
+.claseLocal {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
 }
 
-/* Hover del Botón '+info' */
-.miBoton:hover{
-	background-color: blue;
+.claseLocal h5 {
+    color: blueviolet;
+}
+.claseLocal a {
+    color: blueviolet;
+    text-decoration: none;
 }
 
-/* Contenedor 'productos' - Márgen superior */
-#productos {
-	margin-top: 60px;
+/* Clase contenedora de tarjetas de locales */
+.claseServ {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+}
+.claseServ h5 {
+    color: blueviolet;
+    font-size: 25px;
 }
 
-/* Contenedor 'locales' - Márgen superior */
-#locales {
-	margin-top: 60px;
+/* Clase contenedora de tarjetas de Ofertas */
+.claseOfer {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.claseOfer h2 {
+    color: red ;
+}
+.w3-third ul {
+    background-color: rgb(252, 252, 176);
+    color: rgb(101, 44, 155);
+}
+.w3-third p {
+    color: black;
+    font-weight: bold;
+}
+.w3-border {
+    border-radius: 2%;
 }
 
-/* Clase 'claseProducto' - Alineación de títuls h3 por defecto */
-.claseProducto h3 {
-	text-align: center;
+/* Clase contenedora de tarjetas de Marcas */
+.claseMarc {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.claseMarc h2 {
+    color: yellow;
+}
+.claseMarc p {
+    margin-bottom: 60px;
 }
 
-/* Imagen de Presentación */
-#presentacion {
-	margin-top: 40px;
+/* Clase contenedora de tarjetas de Marcas */
+.clasePie {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.clasePie a {
+    color: yellow;
+}
+.clasePie p {
+    color: yellow;
+}
+.clasePie h4 {
+    color: yellow;
 }
 
-/* Media query para los títulos h3 de la clase 'claseProducto' */
-@media screen and (min-width: 1289px) {
-	.claseProducto h3 {
-		font-size: 24px;
-	}
-}
-@media screen and (max-width: 1289px) {
-	.claseProducto h3 {
-		font-size: 20px;
-	}
-}
-@media screen and (max-width: 1108px) {
-	.claseProducto h3 {
-		font-size: 15px;
-	}
-}
-@media screen and (max-width: 884px) {
-	.claseProducto h3 {
-		font-size: 12px;
-	}
-  }
-@media screen and (max-width: 749px) {
-	.claseProducto h3 {
-		font-size: 11px;
-	}
-}
-@media screen and (max-width: 704px) {
-	.claseProducto h3 {
-		font-size: 10px;
-	}
-}
-@media screen and (max-width: 658px) {
-	.claseProducto h3 {
-		font-size: 8px;
-	}
-}
-@media screen and (max-width: 601px) {
-	.claseProducto h3 {
-		font-size: 20px;
-	}
+/* Clase contenedora de formulario de contacto */
+.claseConta {
+    background-color: rgb(249, 249, 147);
 }
 
-/* Media query del botón perteneciente a la clase 'miBoton' */
-@media screen and (max-width: 1101px) {
-	.miBoton {
-		margin: 1px;
-		padding: 1px 30px;
-	}
+/* Estilos personalizados para los Item de la Navbar*/
+.miItem {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Media Query de la imágen de presentación */
-@media screen and (min-width: 1000px) {
-	#presentacion {
-		margin-top: 5px;
-	}
+/* Estilos personalizados para los textos del los elementos del carrusel */
+.carousel-caption h5 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
 }
-@media screen and (max-width: 1000px) {
-	#presentacion {
-		margin-top: 60px;
-	}
+.carousel-caption p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
 }
 
+/* Media query para el comportamiento de la altura del carrousel */
+@media screen and (min-width: 1280px){
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+/* Personalización del Pie de Página */
+.clasePie {
+    padding-left: 200px;
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:yellow;
+}
+.clasePie h4 {
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.clasePie p {
+    margin-bottom: 5px;
+}
+.clasePie a {
+    color:white;
+    text-decoration: none;
+}
+.clasePie li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* Personalización del Botón Acordeón de Quiénes somos */
+.claseAcor {
+    margin-right: 140px;
+}
+.accordion {
+    --bs-accordion-color: yellow;
+    --bs-accordion-bg: blueviolet;
+    --bs-accordion-btn-color: yellow;
+    --bs-accordion-btn-bg: blueviolet;
+    --bs-accordion-active-bg: blueviolet;
+    --bs-accordion-btn-active-color: yellow;
+    --bs-accordion-btn-focus-border-color: blueviolet;
+    --bs-accordion-btn-focus-box-shadow: blueviolet;
+    --bs-accordion-active-color: yellow;
+    --bs-accordion-active-bg: blueviolet;
+}
+.accordion-button {
+    padding-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.accordion-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/* Personalización del Powered by */
+.clasePower h4 {
+    margin-top: 40px;
+    padding-bottom: 0px;
+}
+.clasePower a {
+    text-decoration: underline;
+}
+
+/* Personalización del form de Suscripción */
+.claseSusc {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: blueviolet;
+}
+.claseSusc h5 {
+    color: blueviolet;
+    font-size: 25px;
+}
+.claseSusc h2 {
+    color: yellow;
+    text-align: center;
+}
+
+/* Media query para el comportamiento del contenedor de suscripción */
+@media screen and (min-width: 1280px) {
+    .claseSusc {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .claseSusc {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.formSusc {
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+.contSusc {
+    padding: 10px;
+    background-color: rgb(252, 252, 176) ;
+}
+.claseSusc h2 {
+    color: yellow;
+    text-align: center;
+}
+.contSusc h2 {
+    color: blueviolet;
+    text-align: center;
+}
+.claseSusc p {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.suscBoton {
+    margin: 0px;
+    padding: 0px;
+}
+input[type=submit] {
+    background-color: rgb(11, 94, 215);
+    padding: 5px;
+    margin: 0px;
+    color: white;
+    border: none;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}

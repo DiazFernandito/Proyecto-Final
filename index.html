@@ -10,11 +10,13 @@
     <title>Colibri Pinturerias</title>
     <link rel="icon" type="image/x-icon" href="pictures/colibri-icono-24.ico">
 
+    <!-- Referencia a hoja de Estilos CSS (Bootstrap) -->
+    <link rel="stylesheet" href="bootstrap53/css/bootstrap.min.css"> 
+    <!-- Referencia a scripts JS (Bootstrap) -->
+    <script src="bootstrap53/js/bootstrap.bundle.min.js"></script> 
     <!-- Referencia a hoja de Estilos CSS (w3Schools) -->
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/w3-theme-purple.css">
-    
+    <link rel="stylesheet" href="w3schools/w3.css">
+
     <!-- Referencia a hoja de Estilos CSS Personalizadas -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -24,33 +26,344 @@
 
     <!-- Cabecera del documento -->
     <header>
+
         <!-- Navbar -->
-        <div id="navbarContainer" class="w3-top">
-            <div class="w3-bar w3-theme-d2 w3-left-align" style="height: 56px;">
-                <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white">
-                    <img src="pictures/house-32-violeta.ico" alt="Home" style="padding: 8px;">
-                </a>
-                <a href="index_form.html"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Reclamos</a>
-                <a href="#contacto"        class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Contacto</a>
-                <a href="#ofertas"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Ofertas</a>
-                <a href="#productos"       class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Productos</a>
-                <a href="#locales"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Locales</a>
-                <a href="#marcas"          class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Marcas</a>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: blueviolet; opacity: 85%;">
+            <div class="container-fluid">        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="pictures/list-view-24-blanco.ico" alt="List">
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="pictures/house-24-blanco.ico" alt="House">
+                </a>                
+                <div class="collapse navbar-collapse" id="miNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">        <!-- por defecto se usa la clase me-auto (izquierda), para alionear a la derecha usar la clase ms-auto -->
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="#locales">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="#ofertas">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="#marcas">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miItem" href="index_form.html" target="_self" style="color: yellow;">Reclamos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+
     </header>    
 
     <!-- Cuerpo Principal del documento -->
     <main>
-        <!-- Imágen de presentación -->
-        <div id="presentacion" class="w3-display-container w3-animate-opacity">
-            <img src="pictures/colibri-wall2.jpg" alt="Logo de El Colibrí" style="width:100%;height:100%;opacity: 100%;">
+
+        <!-- Portada Carrousel (Bootstrap)-->
+        <div id="carouselPortada" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="pictures/pintura_052_arcoiris_conceptual-logo.png" class="d-block w-100" alt="Portada Principal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PONEMOS TODO EL COLOR A TU VIDA</h5>
+                        <p>Desde 1950 somos los representantes del color en Argentina</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_comedor-logo.png" class="d-block w-100" alt="Dentro del hogar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DENTRO DE TU HOGAR</h5>
+                        <p>Tenemos una solución de color para cada ambiente de tu hogar</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_exterior_logo.png" class="d-block w-100" alt="Fuera del hogar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white">EN TUS EXTERIORES</h5>
+                        <p style="color: white">Todos lo que necesites para darle color y protección a tus exteriores</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_017_oficina_azul-logo.png" class="d-block w-100" alt="Oficina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>EN TU LUGAR DE TRABAJO</h5>
+                        <p>Dónde sea que trabajes allí estamos nosotros</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_057_atencion-telefonica-logo.png" class="d-block w-100" alt="Atencion">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black">CON ASISTENCIA PERSONALIZADA</h5>
+                        <p style="color: black">Cualquiera sea tu consulta siempre estaremos para ayudarte</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_055_asesoramiento-logo.png" class="d-block w-100" alt="Asesoramiento">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black">CON ASESORAMIENTO PROFESIONAL</h5>
+                        <p style="color: black">Nuestros asesores son los mejores del mercado</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_063_tarros-logo.png" class="d-block w-100" alt="Tarros">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: rgb(255, 31, 31)">CON VARIEDAD DE COLORES EN PINTURAS</h5>
+                        <p style="color: rgb(255, 31, 31);">El mayor surtido y variedad de colores en Pinturas</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_068_herramientas-logo.png" class="d-block w-100" alt="Herramientas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Y LOS ELEMENTOS PARA EL PINTOR</h5>
+                        <p>Podrás encontrar todos lo que necesités para emprender tu proyecto</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="pictures/pintura_065_familia-logo.png" class="d-block w-100" alt="Familia">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ACOMPAÑÁNDOTE SIEMPRE</h5>
+                        <p>Estamos con vos en todas las etapas de tus proyectos</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortada" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortada" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <!-- Marcas -->
-        <div id="marcas" class="w3-container w3-padding-64 w3-center">
+
+
+        <!-- Locales (Bootstrap) -->
+        <div id="locales" class="claseLocal">
+            <h2 style="text-align: center;color: yellow;">NUESTRAS SUCURSALES</h2>
+            <p style="text-align: center;color: white;">Ubicadas en puntos estratégicos de la ciudad para su comodidad</p>
+            <div class="card-group">
+                <!-- Tarjeta 1: Centro -->
+                <div class="card text-center">
+                    <img src="pictures/sucursal_centro_small.jpg" class="card-img-top" alt="Centro" style="width:100%;height: 313px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sucursal Centro</h5>
+                        <p class="card-text">En la zona comercial más activa de la ciudad</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="pictures/map-marker-2-24.ico">&nbsp;&nbsp;San Martin 150</li>
+                        <li class="list-group-item"><img src="pictures/phone-24.ico">&nbsp;&nbsp;381 5888 999</li>
+                        <li class="list-group-item"><img src="pictures/whatsapp-24.ico">&nbsp;&nbsp;381 3589 235</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto:centro@colibri.com.ar" class="card-link"><img src="pictures/email-12-24.ico">&nbsp;&nbsp;centro@colibri.com.ar</a>
+                    </div>
+                </div>
+                <!-- Tarjeta 2: Norte -->
+                <div class="card text-center">
+                    <img src="pictures/sucursal_norte_small.jpg" class="card-img-top" alt="Norte" style="width:100%;height: 313px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sucursal Norte</h5>
+                        <p class="card-text">En zona norte de la ciudad también estamos</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="pictures/map-marker-2-24.ico">&nbsp;&nbsp;Av. Norte 1650</li>
+                        <li class="list-group-item"><img src="pictures/phone-24.ico">&nbsp;&nbsp;381 6123 456</li>
+                        <li class="list-group-item"><img src="pictures/whatsapp-24.ico">&nbsp;&nbsp;381 5123 456</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto:norte@colibri.com.ar" class="card-link"><img src="pictures/email-12-24.ico">&nbsp;&nbsp;norte@colibri.com.ar</a>
+                    </div>
+                </div>
+                <!-- Tarjeta 3: Sur -->
+                <div class="card text-center">
+                    <img src="pictures/sucursal_sur_small.jpg" class="card-img-top" alt="Sur" style="width:100%;height: 313px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sucursal Sur</h5>
+                        <p class="card-text">Para los que se encuentren sobre el acceso Sur</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="pictures/map-marker-2-24.ico">&nbsp;&nbsp;Gral. Gutierrez 35</li>
+                        <li class="list-group-item"><img src="pictures/phone-24.ico">&nbsp;&nbsp;381 7 9874 123</li>
+                        <li class="list-group-item"><img src="pictures/whatsapp-24.ico">&nbsp;&nbsp;381 6 8899 357</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto:sur@colibri.com.ar" class="card-link"><img src="pictures/email-12-24.ico">&nbsp;&nbsp;sur@colibri.com.ar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Servicios (Bootstrap)-->
+        <div id="servicios" class="claseServ">
+            <h2 style="text-align: center;color: yellow;">NUESTROS SERVICIOS</h2>
+            <p style="text-align: center;color: white;">En nuestros showrooms encontrará todo lo que necesite</p>
+            <div class="row">
+                <!-- Exteriores -->
+                <div class="col-sm-6 mb-3 mb-sm-10">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Productos para Exteriores</h5>
+                            <p class="card-text" style="font-style: italic;">
+                                Desde el tratamiento estético de sus paredes
+                                hasta los métodos de protección contra las inclemencias 
+                                climáticas
+                            </p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interiores -->
+                <div class="col-sm-6 mb-3 mb-sm-10">
+                    <div class="card  text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Decoración de Interiores</h5>
+                            <p class="card-text" style="font-style: italic;">
+                                Desde una amplia selección de colores y tonos, hasta el más
+                                completo set de elementos de decoración
+                            </p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Maderas -->
+                <div class="col-sm-6 mb-3 mb-sm-10">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Línea para maderas</h5>
+                            <p class="card-text" style="font-style: italic;">
+                                Gran variedad de elementos para el tratamiento de todas su
+                                carpintería, hasta el mayor surtido de barnices
+                            </p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Insumos -->
+                <div class="col-sm-6 mb-3 mb-sm-10">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Insumos para el pintor</h5>
+                            <p class="card-text" style="font-style: italic;">
+                                Herramientas de todo tipo, nacionales e importados, pinceles, pinzas,
+                                aire comprimido, medidores de tono, etc. 
+                            </p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ofertas (w3Schools)-->
+        <div id="ofertas" class="w3-row-padding w3-center w3-padding-64 claseOfer">
+            <h2 style="color: yellow;">NUESTRAS OFERTAS</h2>
+            <p>Le ofrecemos estos increíbles precios !</p><br>
+            <!-- Oferta Alba -->
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Alba</p>
+                    </li>
+                    <li class="w3-padding-16"><b>Albacryl</b></li>
+                    <li class="w3-padding-16">Rinde más</li>
+                    <li class="w3-padding-16">Interiores</li>
+                    <li class="w3-padding-16"><b>1 LT</b></li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 8.500.-</h2>
+                        <span>Contado/Efectivo</span>
+                    </li>
+                    <li>
+                        <img src="pictures/alba1.png" alt="Alba1" style="width: 200px; height: 200px;">
+                    </li>
+                </ul>
+            </div>
+            <!-- Oferta Sherwin Williams -->
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">Sherwin Williams</p>
+                    </li>
+                    <li class="w3-padding-16"><b>Loxon</b></li>
+                    <li class="w3-padding-16">Larga Duración</li>
+                    <li class="w3-padding-16">Exteriores</li>
+                    <li class="w3-padding-16"><b>1.5 LT</b></li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 12.499.-</h2>
+                        <span>Contado/Efectivo</span>
+                    </li>
+                    <li>
+                        <img src="pictures/Loxon1.png" alt="Sherwin" style="width: 200px; height: 200px;">
+                    </li>
+                </ul>
+            </div>
+            <!-- Oferta Tersuave -->
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Tersuave</p>
+                    </li>
+                    <li class="w3-padding-16"><b>Terplast</b></li>
+                    <li class="w3-padding-16">Revoque Plástico</li>
+                    <li class="w3-padding-16">Interior/Exterior</li>
+                    <li class="w3-padding-16"><b>5 KG</b></li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 22.000.-</h2>
+                        <span>Contado/Efectivo</span>
+                    </li>
+                    <li>
+                        <img src="pictures/Tersuave1.png" alt="Tersuave" style="width: 200px; height: 200px;">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Servicio de suscripción a ofertas (Bootstrap)-->
+        <div class="claseSusc">
+            <h2>SUSCRÍBASE GRATIS</h2>
+            <form action="" class="formSusc">
+                <div class="contSusc">
+                    <h2>Nuestro boletín de Ofertas</h2>
+                    <p>
+                        Todos los días recibirá en su bandeja de entrada nuestro <span style="text-decoration: underline;">Boletín de ofertas</span> 
+                        y Cupones de Descuentos Exclusivos para que Ud. pueda aprovechar nuestros incríbles precios.
+                    </p>
+                </div>
+                <div class="contSusc">
+                    <input type="text" placeholder="Su nombre" name="name" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
+                    <input type="text" placeholder="Su correo electrónico" name="mail" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
+                </div>
+                <div class="contSusc">
+                    <div class="suscBoton">
+                        <input type="submit" value="Suscríbase" style="width: 100%;padding:5px;margin:5px 0;display: inline-block;border: 1px solid grey;box-sizing:border-box;">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Marcas (w3Schools) -->
+        <div id="marcas" class="w3-container w3-padding-64 w3-center claseMarc">
             <h2>MARCAS</h2>
             <p>Trabajamos con las marcas más prestigiosas</p>
-            <div class="w3-row"><br>
+            <div class="w3-row">
                 <div class="w3-quarter">
                     <img src="pictures/Alba.jpg" alt="Alba" style="width:45%" class="w3-circle w3-hover-opacity">
                     <h3>Alba</h3>
@@ -86,174 +399,11 @@
             </div>
         </div>
 
-        <!-- Locales -->
-        <div id="locales" class="w3-row-padding w3-padding-64 w3-theme-l2">
-            <div class="w3-quarter">
-                <h2>NUESTROS LOCALES</h2>
-                <p>
-                    Contamos con tres sucursales en puntos estratégicos de la ciudad
-                    con la variedad más amplia de productos del mercado y con los profesionales
-                    que le brindarán una atención de primera.
-                </p>
-            </div>
-            <!-- Local Centro -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/centro.jpg" alt="Centro" style="width: 100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Centro</h3>
-                        <h4 style="color:blueviolet;">San Martin 150</h4>
-                        <p>Teléfonos</p>
-                        <p>381 5888 999</p>
-                        <p>381 3589 235</p>
-                        <p style="font-size: 8px; font-weight: bold;">centro@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Local Norte -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/norte.jpg" alt="Norte" style="width:100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Norte</h3>
-                        <h4 style="color:blueviolet;">Av. Norte 2650</h4>
-                        <p>Teléfonos</p>
-                        <p>381 6123 456</p>
-                        <p>381 5123 456</p>
-                        <p style="font-size: 8px; font-weight: bold;">norte@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Local Sur -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/sur.jpg" alt="Sur" style="width:100%; height: 229px;">
-                    <div class="w3-container">
-                        <h3>Sucursal Sur</h3>
-                        <h4 style="color:blueviolet;">Gral. Gutierrez 35</h4>
-                        <p>Teléfonos</p>
-                        <p>381 7 9874 123</p>
-                        <p>381 6 8899 357</p>
-                        <p style="font-size: 8px; font-weight: bold;">sur@colibri.com.ar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Productos -->
-        <div id="productos" class="w3-row-padding w3-padding-64 w3-theme-l2">
-            <h2>NUESTROS PRODUCTOS</h2>
-            <p>En nuestro Showroom encontrará todo lo que necesite</p><br>
-            <!-- Exteriores -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/exteriores.png" alt="Exteriores" style="width: 100%; height: 229px;">
-                    <div class="w3-container claseProducto">
-                        <h3>Productos para Exteriores</h3>
-                        <button class="miBoton">+Info</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Interiores -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/interiores.png" alt="Interiores" style="width:100%; height: 229px;">
-                    <div class="w3-container claseProducto">
-                        <h3>Decoración de Interiores</h3>
-                        <button class="miBoton">+Info</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Maderas -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/maderas.png" alt="Maderas" style="width:100%; height: 229px;">
-                    <div class="w3-container claseProducto">
-                        <h3>Linea para maderas</h3>
-                        <button class="miBoton">+Info</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Insumos -->
-            <div class="w3-quarter">
-                <div class="w3-card w3-white w3-border w3-hover-shadow">
-                    <img src="pictures/insumos.png" alt="Insumos" style="width:100%; height: 229px;">
-                    <div class="w3-container claseProducto">
-                        <h3>Insumos para el pintor</h3>
-                        <button class="miBoton">+Info</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Ofertas -->
-        <div id="ofertas" class="w3-row-padding w3-center w3-padding-64">
-            <h2>NUESTRAS OFERTAS</h2>
-            <p>Le ofrecemos estos increíbles precios !</p><br>
-            <!-- Oferta Alba -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme">
-                        <p class="w3-xlarge">Alba</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Albacryl</b></li>
-                    <li class="w3-padding-16">Rinde más</li>
-                    <li class="w3-padding-16">Interiores</li>
-                    <li class="w3-padding-16"><b>1 LT</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 8.500.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/alba1.png" alt="Alba1" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-            <!-- Oferta Sherwin Williams -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme-l2">
-                        <p class="w3-xlarge">Sherwin Williams</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Loxon</b></li>
-                    <li class="w3-padding-16">Larga Duración</li>
-                    <li class="w3-padding-16">Exteriores</li>
-                    <li class="w3-padding-16"><b>1.5 LT</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 12.499.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/Loxon1.jpg" alt="Sherwin" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-            <!-- Oferta Tersuave -->
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                    <li class="w3-theme">
-                        <p class="w3-xlarge">Tersuave</p>
-                    </li>
-                    <li class="w3-padding-16"><b>Terplast</b></li>
-                    <li class="w3-padding-16">Revoque Plástico</li>
-                    <li class="w3-padding-16">Interior/Exterior</li>
-                    <li class="w3-padding-16"><b>5 KG</b></li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 22.000.-</h2>
-                        <span class="w3-opacity">Contado/Efectivo</span>
-                    </li>
-                    <li>
-                        <img src="pictures/Tersuave1.jpg" alt="Tersuave" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Contacto -->
-        <div id="contacto" class="w3-container w3-padding-64 w3-theme-l5">
+        <!-- Contacto (w3Schools + Bootstrap)-->
+        <div id="contacto" class="w3-container w3-padding-64 w3-theme-l5 claseConta">
             <div class="w3-row">
                 <!-- Datos de contacto -->
-                <div class="w3-col m5">
+                <div class="w3-col m3">
                     <div class="w3-padding-16">
                         <span class="w3-xlarge w3-border-deep-purple w3-bottombar">Contáctenos</span>
                     </div>
@@ -264,8 +414,8 @@
                     <p><img src="pictures/email-12-24.ico">&nbsp;&nbsp;atclientes@colibri.com.ar</p>
                 </div>
                 <!-- Formulario de contacto -->
-                <div class="w3-col m7">
-                    <form class="w3-container w3-card-4 w3-padding-16 w3-white" target="_blank">
+                <div class="w3-col m9">
+                    <form class="w3-container w3-card-4 w3-padding-16 w3-white" target="_blank" style="border-radius: 1.8%;">
                         <div class="w3-section">      
                             <label>Nombre</label>
                             <input class="w3-input" type="text" name="Nombre" required>
@@ -278,113 +428,65 @@
                             <label>Mensaje</label>
                             <input class="w3-input" type="text" name="Mensaje" required>
                         </div>  
-                        <button type="button" class="w3-button w3-right w3-theme">Enviar</button>
+                        <!-- Combinación de clases bootstrap y w3schools  -->
+                        <a href="mailto:atclientes@colibri.com.ar" class="btn btn-primary w3-right">Enviar</a>
                     </form>
                 </div>
             </div>
         </div>
-    
-        <!-- Botón de Inicio al Pie -->
-        <div class="w3-bottombar w3-white">
-            <div class="w3-bar w3-white w3-left-align">
-                <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white w3-right">
-                    <img src="pictures/house-24-violeta.ico" alt="Home">
-                </a>
-            </div>
-        </div>
+
     </main>
 
-    <!-- Pie del documento - Redes Sociales - Powered/Quiénes somos -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-
-        <table style="width: 100%">
-        <tr>
-            <th colspan="2">
-                <h4> Mapa del Sitio </h4>
-            </th>
-            
-            <th rowspan="4">
-
-                <h4>Síganos</h4>
-                <a class="w3-button w3-large w3-white" href="https://es-la.facebook.com/login.php" title="Facebook" target="_blank"><img src="pictures/facebook-3-24.ico"></a>
-                <a class="w3-button w3-large w3-white" href="https://twitter.com/login/" title="Twitter" target="_blank"><img src="pictures/twitter-3-24.ico"></a>
-                <a class="w3-button w3-large w3-white" href="https://www.instagram.com/accounts/login/" title="Instragram" target="_blank"><img src="pictures/instagram-24.ico"></a>
-                <a class="w3-button w3-large w3-white" href="https://www.linkedin.com/login?fromSignIn=true" title="Linkedin" target="_blank"><img src="pictures/linkedin-6-24.ico"></a>
-                 <!-- El siguiente link carga en una nueva pestaña la página 'index_team.html'-->
-                <p>Quiénes Somos ?&nbsp; 
-                <a href="index_team.html" target="_blank">Grupo 7 - Comisión 184</a>
-                </p>
-            </th>
-        </tr>
-        <tr>
-            <td >
-                <a href="#locales"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Locales</a>
-            </td>
-            <td>
-                <a href="#productos"       class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Productos</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#marcas"          class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Marcas</a>
-            </td>
-            <td>
-                <a href="index_form.html"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Reclamos</a>
-            </td>
-        <tr>
-
-            <td>
-                <a href="#contacto"        class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Contacto</a>
-            </td>
-            <td>
-               <a href="#ofertas"         class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right" style="padding-top: 20px; font-size: 18px;">Ofertas</a>
-            </td>
-        </tr>
-        </tr>
-        
-       
-        </table>
-    
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-    <!-- Efecto scroll suave -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
+    <!-- Contenedor al pie (w3Schools + Bootstrap)-->
+    <footer>
+        <!-- Redes + Quienes somos + Mapa del Sitio-->
+        <div class="w3-container w3-padding-64 w3-theme-l5 clasePie">
+            <div class="w3-row">
+                <!-- Redes Sociales -->
+                <div class="w3-col m4">
+                    <h4>Síganos</h4>
+                    <a class="w3-button w3-large w3-white" href="https://es-la.facebook.com/login.php" title="Facebook" target="_blank"><img src="pictures/facebook-3-24.ico"></a>
+                    <a class="w3-button w3-large w3-white" href="https://twitter.com/login/" title="Twitter" target="_blank"><img src="pictures/twitter-3-24.ico"></a>
+                    <a class="w3-button w3-large w3-white" href="https://www.instagram.com/accounts/login/" title="Instragram" target="_blank"><img src="pictures/instagram-24.ico"></a>
+                    <a class="w3-button w3-large w3-white" href="https://www.linkedin.com/login?fromSignIn=true" title="Linkedin" target="_blank"><img src="pictures/linkedin-6-24.ico"></a>
+                    <div class="clasePower">
+                        <h4>Powered by</h4>
+                        <a href="index_team.html" target="_blank">Grupo 7 - Comisión 184</a>
+                        <p style="margin-top: 10px;font-size: 12px;">&#169Derechos Reservados</p>
+                    </div>
+                </div>
+                <!-- Quiénes somos ? (w3Schools + Bootstrap) -->
+                <div class="w3-col m4">
+                    <div class="claseAcor">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Quiénes somos ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">El Colibrí SRL, fundada en 1950, con casa Central en San Martín 150, de nuestra ciudad. <br> CUIT 22-33333333-4 <br> IVA Responsable Inscripto</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mapa del sitio (w3Schools)-->
+                <div class="w3-col m4">
+                    <h4>Mapa del sitio</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#locales">Sucursales</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#marcas">Marcas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="index_form.html">Reclamos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
