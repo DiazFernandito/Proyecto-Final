@@ -1,8 +1,44 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu:wght@500&family=Urbanist:wght@500&display=swap');
 
-/* Clase contenedora de tarjetas de locales */
-.claseLocal {
+/* Estilo pre-determinado del cuerpo principal del documento */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* Estilos personalizados para los Item de la Navbar*/
+.miItem {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos personalizados para los textos del los elementos del carrusel de la Portada */
+.carousel-caption h5 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
+}
+.carousel-caption p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+/* Media query para el comportamiento de la altura del carrousel de la Portada */
+@media screen and (min-width: 1280px){
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+/* Clase contenedora de tarjetas de Sucursales */
+.claseSucur {
     margin-top: 0px;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -10,16 +46,15 @@
     padding-right: 40px;
     background-color: blueviolet;
 }
-
-.claseLocal h5 {
+.claseSucur h5 {
     color: blueviolet;
 }
-.claseLocal a {
+.claseSucur a {
     color: blueviolet;
     text-decoration: none;
 }
 
-/* Clase contenedora de tarjetas de locales */
+/* Clase contenedora de tarjetas de Servicios */
 .claseServ {
     margin-top: 0px;
     padding-top: 100px;
@@ -58,6 +93,73 @@
     border-radius: 2%;
 }
 
+/* Personalización del form de Suscripción */
+.claseSusc {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: blueviolet;
+}
+.claseSusc h5 {
+    color: blueviolet;
+    font-size: 25px;
+}
+.claseSusc h2 {
+    color: yellow;
+    text-align: center;
+}
+.formSusc {
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+.contSusc {
+    padding: 10px;
+    background-color: rgb(252, 252, 176) ;
+}
+.claseSusc h2 {
+    color: yellow;
+    text-align: center;
+}
+.contSusc h2 {
+    color: blueviolet;
+    text-align: center;
+}
+.claseSusc p {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.suscBoton {
+    margin: 0px;
+    padding: 0px;
+}
+input[type=submit] {
+    background-color: rgb(11, 94, 215);
+    padding: 5px;
+    margin: 0px;
+    color: white;
+    border: none;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/* Media query para el comportamiento del contenedor de suscripción */
+@media screen and (min-width: 1280px) {
+    .claseSusc {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .claseSusc {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 /* Clase contenedora de tarjetas de Marcas */
 .claseMarc {
     margin-top: 0px;
@@ -75,39 +177,9 @@
     margin-bottom: 60px;
 }
 
-/* Clase contenedora de formulario de contacto */
+/* Clase contenedora de formulario de Contacto */
 .claseConta {
     background-color: rgb(249, 249, 147);
-}
-
-/* Estilos personalizados para los Item de la Navbar*/
-.miItem {
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Estilos personalizados para los textos del los elementos del carrusel */
-.carousel-caption h5 {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
-    margin-bottom: 0px;
-}
-.carousel-caption p {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-
-/* Media query para el comportamiento de la altura del carrousel */
-@media screen and (min-width: 1280px){
-    .carousel-item {
-        height: 100vh;
-    }
 }
 
 /* Clase contenedora del footer */
@@ -225,70 +297,3 @@
     text-decoration: underline;
 }
 
-/* Personalización del form de Suscripción */
-.claseSusc {
-    margin-top: 0px;
-    padding-top: 5px;
-    padding-bottom: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
-    background-color: blueviolet;
-}
-.claseSusc h5 {
-    color: blueviolet;
-    font-size: 25px;
-}
-.claseSusc h2 {
-    color: yellow;
-    text-align: center;
-}
-
-/* Media query para el comportamiento del contenedor de suscripción */
-@media screen and (min-width: 1280px) {
-    .claseSusc {
-        padding-left: 350px;
-        padding-right: 350px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .claseSusc {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-.formSusc {
-    border: 1px solid grey;
-    border-radius: 2%;
-}
-.contSusc {
-    padding: 10px;
-    background-color: rgb(252, 252, 176) ;
-}
-.claseSusc h2 {
-    color: yellow;
-    text-align: center;
-}
-.contSusc h2 {
-    color: blueviolet;
-    text-align: center;
-}
-.claseSusc p {
-    color: blueviolet;
-    text-align: center;
-    margin-bottom: 0px;
-}
-.suscBoton {
-    margin: 0px;
-    padding: 0px;
-}
-input[type=submit] {
-    background-color: rgb(11, 94, 215);
-    padding: 5px;
-    margin: 0px;
-    color: white;
-    border: none;
-}
-input[type=submit]:hover {
-    opacity: 0.8;
-}
