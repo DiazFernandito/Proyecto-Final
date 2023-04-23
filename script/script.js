@@ -27,7 +27,7 @@ function generarPDF(p1) {
     doc.line(50, 40, 160, 40);            
 
     /* logo */
-    doc.addImage("../pictures/colibri-png.png", "PNG", 70, 45);
+    doc.addImage(".\/pictures\/colibri-png.png", "PNG", 70, 45);
 
     /* Porcentaje de descuento */
     doc.setFontSize(12);
