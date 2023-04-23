@@ -20,6 +20,11 @@
     <!-- Referencia a hoja de Estilos CSS Personalizadas -->
     <link rel="stylesheet" href="css/estilos.css">
 
+    <!-- Librería jsPDF -->
+    <script src="jspdf/dist/jspdf.umd.min.js"></script>
+    <!-- Link a scripts JavaScript -->
+    <script src="script/script.js"></script>
+
 </head>
 
 <body>
@@ -210,7 +215,6 @@
             </div>
         </div>
 
-
         <!-- Servicios (Bootstrap)-->
         <div id="servicios" class="claseServ">
             <h2 style="text-align: center;color: yellow;">NUESTROS SERVICIOS</h2>
@@ -361,25 +365,25 @@
         <div class="claseSusc">
             <form action="" class="formSusc">
                 <div class="contSusc" style="border-radius: 10px 10px 0px 0px;">
-                    <h2>Suscríbase Gratis a nuestro boletín de Ofertas</h2>
+                    <h2 style="margin-bottom: 0px; padding-bottom: 0px;">Suscríbase Gratis a nuestro boletín de Ofertas</h2>
+                    <h2 style="margin-top: 0px; padding-top: 0px;">y obtenga un Cupón de Descuentos</h2>
                     <p>
                         Todos los días recibirá en su bandeja de entrada nuestro <span style="text-decoration: underline;">Boletín de ofertas</span> 
-                        y Cupones de Descuentos Exclusivos para que Ud. pueda aprovechar nuestros increíbles precios.
+                        para que Ud. pueda aprovechar nuestros increíbles precios.
                     </p>
                 </div>
                 <div class="contSusc">
-                    <input type="text" placeholder="Su nombre" name="name" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
+                    <input type="text" id="nombreCliente" placeholder="Su nombre" name="name" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
                     <input type="text" placeholder="Su correo electrónico" name="mail" style="width: 100%;padding: 12px;margin: 8px 0;display: inline-block;border: 1px solid grey;box-sizing: border-box;" required>
                 </div>
                 <div class="contSusc" style="border-radius: 0px 0px 10px 10px; padding-left:0px;">
                     <!-- Botón de suscripción (Bootstrap) -->
                     <div class="d-grid gap-2 col-1 mx-auto">
-                        <a href="mailto:suscripcion@colibri.com.ar" class="btn btn-primary">Suscríbase</a>
+                        <button type="button" class="btn btn-primary" onclick="generarPDF(document.getElementById('nombreCliente').value);">Suscríbase</button>
                     </div>
                 </div>
             </form>
         </div>
-
 
         <!-- Marcas (w3Schools) -->
         <div id="marcas" class="w3-container w3-center claseMarc">
